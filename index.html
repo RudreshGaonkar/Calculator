@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="super-container">
+        <div class="container">
+            <div class="display-nums js-calc"></div>
+            <div class="num-box">
+                <p>
+                    <button class="num-btn" onclick="updateValue(1)">1</button>
+                    <button class="num-btn" onclick="updateValue(2)">2</button>
+                    <button class="num-btn" onclick="updateValue(3)">3</button>
+                    <button class="operator-btn" onclick="updateValue('+')">+</button>
+                </p>
+                <p>
+                    <button class="num-btn" onclick="updateValue(4)">4</button>
+                    <button class="num-btn" onclick="updateValue(5)">5</button>
+                    <button class="num-btn" onclick="updateValue(6)">6</button>
+                    <button class="operator-btn" onclick="updateValue('-')">-</button>
+                </p>
+                <p>
+                    <button class="num-btn" onclick="updateValue(7)">7</button>
+                    <button class="num-btn" onclick="updateValue(8)">8</button>
+                    <button class="num-btn" onclick="updateValue(9)">9</button>
+                    <button class="operator-btn" onclick="updateValue('*')">*</button>
+                </p>
+                <p>
+                    <button class="num-btn" onclick="updateValue(0)">0</button>
+                    <button class="deci-btn" onclick="updateValue('.')">.</button>
+                    <button class="grey-btn" onclick="evaluateCalculation()">=</button>
+                    <button class="operator-btn" onclick="updateValue('/')">/</button>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <button class="c-btn" onclick="clearCalculation()">Clear</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/script.js"></script>
+</body>
+</html>

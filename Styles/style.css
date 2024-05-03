@@ -9,7 +9,8 @@ p{
     display: flex;
     height: 100vh;
     justify-content: center; /*horizontal */
-    align-items: center;
+    /* align-items: center; */
+    padding: 0;
 }
 
 .container{
@@ -26,6 +27,7 @@ p{
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin: 0;
 }
 
 .display-nums{
@@ -42,6 +44,7 @@ p{
     overflow-wrap: anywhere;
     overflow-y: auto;
     color: white;
+    border-radius: 10px;
 }
 
 .num-box{
@@ -49,6 +52,7 @@ p{
     flex-direction: column;
     flex: 1;
     justify-content: center;
+    margin: 0;
 }
 
 .num-btn, .deci-btn, .grey-btn{

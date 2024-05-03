@@ -14,11 +14,18 @@ function updateValue(value)
 
 function evaluateCalculation()
 {
-    calculation = eval(calculation);
+    
+    try{
+        calculation = eval(calculation);
 
-    localStorage.setItem("calculation",calculation);
-
-    displayCalculation();
+        localStorage.setItem("calculation",calculation);
+        
+        displayCalculation();
+    }
+    catch(err)
+    {
+        document.querySelector('.js-calc').innerHTML = err;
+    }
 }
 
 
